@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AntiguaFragment">
+
+        <ImageView
+            android:id="@+id/PicAntigua"
+            android:layout_width="356dp"
+            android:layout_height="227dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/antigua"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/InfoAntigua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="@string/foto_del_volcan_de_agua"
+            app:layout_constraintBottom_toTopOf="@+id/scroll1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.752"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/infoAntigua2"
+            android:layout_width="84dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="92dp"
+            android:text="@string/he_aqui_la_bella_anitgua_guatemla"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PicAntigua" />
+
+        <Button
+            android:id="@+id/Comentario1"
+            android:layout_width="124dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/comentario"
+            app:layout_constraintBottom_toTopOf="@+id/comentarioo"
+            app:layout_constraintEnd_toStartOf="@+id/scroll1"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infoAntigua2"
+            app:layout_constraintVertical_bias="0.266" />
+
+        <EditText
+            android:id="@+id/comentarioo"
+
+            android:layout_width="226dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="32dp"
+            android:hint="@string/comente_aqui"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ScrollView
+            android:id="@+id/scroll1"
+            android:layout_width="231dp"
+            android:layout_height="278dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/comentarioo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/infoAntigua2">
+
+            <TextView
+                android:id="@+id/InfoAntigua3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/antigua_es_una_peque_a_ciudad_rodeada_por_volcanes_en_el_sur_de_guatemala_es_famosa_por_sus_edificios_coloniales_espa_oles_muchos_de_ellos_restaurados_despu_s_del_terremoto_de_1773_que_termin_con_el_r_gimen_de_200_a_os_de_antigua_como_la_capital_colonial_de_guatemala_algunos_ejemplos_destacados_de_la_arquitectura_incluyen_la_merced_una_baja_iglesia_amarilla_y_blanca_de_estilo_barroco_es_una_parte_integral_de_la_famosa_semana_santa_en_la_ciudad_con_desfiles_y_rituales" />
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
